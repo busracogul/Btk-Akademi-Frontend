@@ -295,27 +295,28 @@
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 }
 
-.team-card-blog-content {
-  padding: 30px;
-  background: #1C1F35;
-
+.card-user-wrapper {
+  background-color: #666c89;
 }
 
-.card-blog {
-  width: 100%;
+.card-user-wrapper .card-user-info {
+  background-color: var(--bg-main-one);
+  color: #ffffff;
 }
 
-.team-info {
-  background: rgb(255, 182, 41);
+.card-user-wrapper .user-social-media {
+  background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+  padding: 20px 17px;
   position: relative;
-  color: #000;
-  right: 0;
   transform: translateY(-50%);
-
 }
 
-.filter-dark {
-  fill: #000 !important;
+.card-user-wrapper .user-social-media a .icon {
+  filter: invert(9%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(5%) contrast(100%);
+}
+
+.card-user-info-desc {
+  margin-top: -30px;
 }
 
 .form-wrapper {

@@ -520,87 +520,93 @@
 
 
   <section>
-    <div class="container">
-      <div class="team-info-wrapper text-center">
+    <div class="container py-5">
+      <div class="text-center">
         <div class="section-top-info p-0">
           The Transporters
         </div>
-        <span class="d-flex fs-4 fw-bolder mb-4 justify-content-center">
-          Meet Expert Team
-        </span>
+        <div class="section-heading pt-2 mb-3">
+          <span class="d-flex fs-4 fw-bolder mb-4 justify-content-center">
+            Meet Expert Team
+          </span>
+        </div>
       </div>
-      <div class=" mb-5">
+      <div class="w-100">
         <div class="swiper teamSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="card-blog-team ">
-                <div class="card-blog-image">
-                  <img src="assets/img/team/person-1.jpg">
-                </div>
-                <div class="team-card-blog-content pb-3">
-                  <div class="span text-white fw-bold">Jessca Arow</div>
-                  <div class="span text-white">Designer</div>
-                </div>
-                <div class="team-info d-flex align-items-center justify-content-center p-3 gap-3">
-                  <a href="#">
-                    <img src="assets/img/team/twitter.svg" alt="twitter">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/facebook.svg" alt="facebook">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/instagram.svg" alt="instagram">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card-blog-team">
-                <div class="card-blog-image">
-                  <img src="assets/img/team/person-2.jpg">
-                </div>
-                <div class="team-card-blog-content pb-3 ">
-                  <div class="span text-white fw-bold">
-                    Kathleen Smith
+              <div class="card-user-wrapper">
+                <img src="assets/img/team/person-1.jpg" class="w-100" alt="user 1">
+                <div class="card-user-info">
+                  <div class="d-flex justify-content-end">
+                    <div class="user-social-media d-flex gap-3">
+                      <a href="#">
+                        <i class="icon icon-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </div>
                   </div>
-                  <div class="span text-white">Designer</div>
-                </div>
-                <div class="team-info d-flex align-items-center justify-content-center p-3 gap-3">
-                  <a href="#">
-                    <img src="assets/img/team/linkedin.svg" alt="linkedin">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/twitter.svg" alt="twitter">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/facebook.svg" alt="facebook">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/instagram.svg" alt="instagram">
-                  </a>
+                  <div class="card-user-info-desc px-4 pb-4">
+                    <span class="d-block fs-4">Jessca Arow</span>
+                    <small>Designer</small>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card-blog-team">
-                <div class="card-blog-image">
-                  <img src="assets/img/team/person-3.jpg">
-                </div>
-                <div class="team-card-blog-content pb-3">
-                  <div class="span text-white fw-bold">Rebecca Tylor</div>
-                  <div class="span text-white">Designer</div>
-                </div>
-                <div class="team-info d-flex align-items-center justify-content-center p-3 gap-3">
-
-                  <a href="#">
-                    <img src="assets/img/team/facebook.svg" alt="facebook">
-                  </a>
-                  <a href="#">
-                    <img src="assets/img/team/instagram.svg" alt="instagram">
-                  </a>
+              <div class="card-user-wrapper">
+                <img src="assets/img/team/person-2.jpg" class="w-100" alt="user 2">
+                <div class="card-user-info">
+                  <div class="d-flex justify-content-end">
+                    <div class="user-social-media d-flex gap-3">
+                      <a href="#">
+                        <i class="icon icon-linkedin"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-user-info-desc px-4 pb-4">
+                    <span class="d-block fs-4">Kathleen Smith</span>
+                    <small>Software Developer</small>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="card-user-wrapper">
+                <img src="assets/img/team/person-3.jpg" class="w-100" alt="user 3">
+                <div class="card-user-info">
+                  <div class="d-flex justify-content-end">
+                    <div class="user-social-media d-flex gap-3">
+                      <a href="#">
+                        <i class="icon icon-facebook"></i>
+                      </a>
+                      <a href="#">
+                        <i class="icon icon-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-user-info-desc px-4 pb-4">
+                    <span class="d-block fs-4">Rebecca Tylor</span>
+                    <small>Frontend Developer</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -772,32 +778,15 @@
 
     })
 
-
-
-
-    // const teamPersonSwiper = new Swiper(".teamSwiper", {
-    //   slidesPerView: 3,
-    //   spaceBetween: 30,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    // });
-
     const teamPersonSwiper = new Swiper('.teamSwiper', {
-
+      slidesPerView: 1,
+      spaceBetween: 0,
       breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        },
-
-        480: {
+        600: {
           slidesPerView: 2,
           spaceBetween: 30
         },
-
-        840: {
+        768: {
           slidesPerView: 3,
           spaceBetween: 40
         }
