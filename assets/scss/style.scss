@@ -4,6 +4,16 @@
   --bg-main-one: #091242;
 }
 
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.py-7 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
 .bg-main-blue {
   background-color: #091242;
 }
@@ -18,6 +28,10 @@
 
 .bg-main-light {
   background-color: #f4f4f4;
+}
+
+.bg-main-gradient {
+  background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
 }
 
 .bg-two-color {
@@ -147,10 +161,14 @@
 }
 
 .section-top-info {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   display: inline-block;
-  padding: 8px 4px;
+  padding: 8px 14px;
   position: relative;
+
+  &.bg-opacity-10 {
+    background-color: rgba(232, 232, 232, 0.1);
+  }
 }
 
 .section-top-info::before {
@@ -319,28 +337,56 @@
   margin-top: -30px;
 }
 
-.form-wrapper {
-  padding: 100px 255px;
+/* bundan sonraki alanlar scss */
+.contact-form {
+  .form-control {
+    background-color: rgba($color: #ffffff, $alpha: 0.05);
+    color: #ffffff;
+    transition: all 300ms;
+
+    &:focus {
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: #efefef;
+  }
+
+  input:-moz-placeholder {
+    color: #efefef;
+  }
 }
 
-.form-bg {
-  background-color: #091242;
+.card-brand {
+  position: relative;
+
+  .brand-bg {
+    img {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background: linear-gradient(0deg, rgba(17, 28, 84, 1) 0%, rgba(17, 28, 84, 0) 100%);
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .brand-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .brand-logo {
+    width: auto;
+    height: 40px;
+    object-fit: contain;
+  }
 }
-
-.form-btn-submit {
-  background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
-  color: #000;
-  width: 194px;
-  height: 60px;
-}
-
-.form-slider {
-  margin-top: -150px;
-}
-
-.form-contact {
-  background: rgba(232, 232, 232, 0.1);
-}
-
-
-//bundan sonraki alan scss kısmı
