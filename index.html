@@ -970,12 +970,12 @@
         <div class="container py-3">
           <div class="row">
             <div class="col-6 text-white align-items-center">
-              <div class="px-4">
-                Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.
+              <div class="px-4 copyright-text">
+                Copyright &copy; TransitFlow | Designed by VictorFlow - Powered by Webflow.
               </div>
             </div>
             <div class="col-6">
-              <ul class="footer-end-list">
+              <ul class="footer-end-list copyright-link">
                 <li><a href="#">Style Guide</a></li>
                 <li><a href="#">Licenses</a></li>
                 <li><a href="#">Changelog</a></li>
@@ -996,25 +996,15 @@
   <script>
     const swiper = new Swiper('.mySwiper', {
 
-      slidesPerView: 5,
+      slidesPerView: 1,
       spaceBetween: 30,
       breakpoints: {
-
-        320: {
-          slidesPerView: 1,
-        },
-        600: {
-          slidesPerView: 2,
-        },
-        980: {
+        768: {
           slidesPerView: 3,
         },
-        1200: {
-          slidesPerView: 4,
-        },
-        1400: {
+        992: {
           slidesPerView: 5,
-        }
+        },
       }
     })
 
@@ -1026,7 +1016,7 @@
         prevEl: ".btn-testimonial-prev",
       },
       breakpoints: {
-        768: {
+        992: {
           slidesPerView: 2,
         },
       },
