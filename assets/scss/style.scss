@@ -111,8 +111,6 @@ a {
   }
 }
 
-
-
 .navbar-quick-btn {
   background-color: #ffffff;
   color: #000;
@@ -155,12 +153,6 @@ a {
   }
 }
 
-.slider-wrapper img {
-  width: 100%;
-  height: auto;
-  margin-top: 0px;
-}
-
 .icon-star {
   background-image: url("../img/icon/star.svg");
 
@@ -168,6 +160,107 @@ a {
     background-image: url("../img/icon/star-active.svg");
   }
 }
+
+.slider--hero {
+  .hero-slider {
+    $pattern-size: 60px;
+    $pattern-bg: -60px;
+
+    &-overlay {
+      background-color: rgba($color: #091242, $alpha: 0.4);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: auto;
+      transform: translateY(-50%);
+      width: 35%;
+      z-index: 1;
+      transition: all 900ms;
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+
+      .btn-content {
+        background: linear-gradient(94.06deg, #ffb629 -1.21%, #ffda56 58.66%, #ffd7a6 116.84%);
+        display: inline-block;
+        position: relative;
+        padding: 15px 30px;
+        overflow: hidden;
+        color: #000000;
+        font-weight: 500;
+        border: 1px solid #ffda68;
+        border-radius: 3px;
+        box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
+
+        & span {
+          position: relative;
+          z-index: 1;
+        }
+
+        &::after {
+          content: "";
+          background-color: #ffffff;
+          position: absolute;
+          right: $pattern-bg / 3;
+          bottom: $pattern-bg - 20px;
+          width: $pattern-size;
+          height: $pattern-size * 2;
+          border-radius: 50%;
+          transform: rotate(15deg);
+          transition: all 300ms ease-in-out;
+        }
+
+        &:hover::after {
+          width: $pattern-size * 3.5;
+          height: $pattern-size * 3.5;
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    &.swiper-slide-active {
+      .hero-slider-content {
+        transform: translate(40%, -50%);
+      }
+    }
+  }
+}
+
+
+.userSwiper {
+  .swiper-slide {
+
+    &.swiper-slide-active,
+    &.swiper-slide-next {
+      .card-testimonial-header {
+        .icon-user {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
+
+.teamSwiper {
+  .swiper-slide {
+    .card-user-wrapper {
+      overflow: hidden;
+
+      .card-user-image:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
 
 .section-top-info {
   background-color: #e8e8e8;
@@ -177,6 +270,10 @@ a {
 
   &.bg-opacity-10 {
     background-color: rgba(232, 232, 232, 0.1);
+  }
+
+  &.bg-opacity-50 {
+    background-color: rgba(4, 28, 55, 0.5);
   }
 
   &::before {
@@ -330,6 +427,8 @@ a {
 .card-user-wrapper .card-user-info {
   background-color: var(--bg-main-one);
   color: #ffffff;
+  z-index: 1;
+  position: relative;
 }
 
 .card-user-wrapper .user-social-media {
