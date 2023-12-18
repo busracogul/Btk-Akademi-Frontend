@@ -23,6 +23,10 @@ const userCommentSwiper = new Swiper('.userSwiper', {
         prevEl: ".btn-testimonial-prev",
     },
     breakpoints: {
+        768: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+        },
         992: {
             slidesPerView: 2,
         },
@@ -33,13 +37,13 @@ const teamPersonSwiper = new Swiper('.teamSwiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     breakpoints: {
-        600: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
         768: {
+            slidesPerView: 2,
+            spaceBetween: 24
+        },
+        992: {
             slidesPerView: 3,
-            spaceBetween: 40
+            spaceBetween: 24
         }
     }
 })

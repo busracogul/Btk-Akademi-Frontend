@@ -13,15 +13,22 @@
 <body>
   <header>
     <div class="bg-main-blue">
-      <div class="header-wrapper">
+      <div class="header-wrapper py-4 px-2 p-lg-5">
         <div class="container">
           <div class="row">
-            <div class="col-4">
-              <div class="logo-wrapper">
-                <img src="assets/img/logo.svg" alt="firma adi" />
+            <div class="col-10 col-lg-4">
+              <div class="logo-wrapper justify-content-center justify-content-lg-start">
+                <a href="#" aria-label="logo">
+                  <img src="assets/img/logo.svg" alt="Firma Adı">
+                </a>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-2 d-flex align-items-center justify-content-center d-lg-none">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="d-none d-lg-block col-lg-8">
               <div class="row">
                 <div class="col-4">
                   <div class="d-flex">
@@ -66,11 +73,8 @@
 
   <nav class="navbar navbar-expand-lg bg-main-blue bg-opacity-25 z-2" data-bs-theme="dark">
     <div class="container h-100">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse h-100" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3 p-md-4 p-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -88,7 +92,7 @@
           </li>
         </ul>
         <span class="navbar-end">
-          <div class="navbar-social-media">
+          <div class="navbar-social-media w-100 w-md-auto justify-content-center justify-content-lg-end">
             <a href="#">
               <i class="icon icon-instagram"></i>
             </a>
@@ -102,14 +106,14 @@
               <i class="icon icon-linkedin"></i>
             </a>
           </div>
-          <a href="#" class="navbar-quick-btn">Request Quote</a>
+          <a href="#" class="d-none d-lg-flex navbar-quick-btn">Request Quote</a>
         </span>
       </div>
     </div>
   </nav>
 
   <section>
-    <div class="slider-wrapper">
+    <div class="slider-hero-wrapper">
       <div class="swiper slider--hero">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -122,7 +126,7 @@
                   <div class="section-heading pt-3 mb-3">
                     <span class="fs-2 lh-sm fw-bolder text-white">Your Gateway to any Destination in the World</span>
                   </div>
-                  <p class="text-white">
+                  <p class="section-desc text-white">
                     In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus.
                   </p>
                   <a href="#" class="btn-content"><span>Explore More</span></a>
@@ -144,7 +148,7 @@
                   <div class="section-heading pt-3 mb-3">
                     <span class="fs-2 lh-sm fw-bolder text-white text-capitalize">world champion in export</span>
                   </div>
-                  <p class="text-white">
+                  <p class="section-desc text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum ipsa id quia neque placeat distinctio reiciendis.
                   </p>
                   <a href="#" class="btn-content"><span>Explore More</span></a>
@@ -166,7 +170,7 @@
                   <div class="section-heading pt-3 mb-3">
                     <span class="fs-2 lh-sm fw-bolder text-white">Global solutions tailored for you</span>
                   </div>
-                  <p class="text-white">
+                  <p class="section-desc text-white">
                     In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus.
                   </p>
                   <a href="#" class="btn-content"><span>Explore More</span></a>
@@ -187,18 +191,18 @@
   <section class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
           <div class="section-top-info">
             What We Do
           </div>
-          <div class="section-heading pt-3">
+          <div class="section-heading pt-3 pb-4 pb-lg-0">
             <span class="fs-1 lh-sm fw-bolder">Safe & Reliable Cargo Solutions</span>
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
           <div class="row">
-            <div class="col-6">
-              <div class="feature-card">
+            <div class="col-12 col-lg-6">
+              <div class="feature-card mb-3 mb-lg-5">
                 <div class="feature-card-image">
                   <img src="assets/img/feature/icon-1.svg" alt="Sea Transport Services" />
                 </div>
@@ -208,8 +212,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="feature-card">
+            <div class="col-12 col-lg-6">
+              <div class="feature-card mb-3 mb-lg-5">
                 <div class="feature-card-image">
                   <img src="assets/img/feature/icon-2.svg" alt="Warehousing Services" />
                 </div>
@@ -219,8 +223,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="feature-card">
+            <div class="col-12 col-lg-6">
+              <div class="feature-card mb-3 mb-lg-5">
                 <div class="feature-card-image">
                   <img src="assets/img/feature/icon-3.svg" alt="Air Fright Services" />
                 </div>
@@ -230,8 +234,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="feature-card">
+            <div class="col-12 col-lg-6">
+              <div class="feature-card mb-3 mb-lg-5">
                 <div class="feature-card-image">
                   <img src="assets/img/feature/icon-4.svg" alt="Local Shipping Services" />
                 </div>
@@ -252,7 +256,7 @@
     <div class="container">
       <div class="global-logistics-wrapper">
         <div class="row justify-content-between space-between">
-          <div class="col-6">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 mt-3 mt-md-5 mt-lg-0">
             <div>
               <div class="section-top-info">Why Us</div>
               <div class="sectin-heading pt-3 mb-3">
@@ -286,26 +290,28 @@
             </div>
           </div>
 
-          <div class="col-5">
-            <div class="image-wrapper">
-              <img src="assets/img/section/fly.jpg" class="img-1" alt="fly">
-              <img src="assets/img/section/packets.jpg" class="img-2" alt="packets">
+          <div class="col-12 col-lg-5 order-1 order-lg-2">
+            <div class="global-logistics-images">
+              <img src="assets/img/section/fly.jpg" class="image-one" alt="fly">
+              <img src="assets/img/section/packets.jpg" class="image-two d-none d-md-block" alt="packets">
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <section>
     <div class="container py-4">
       <div class="row p-0 border-bottom border-top g-0">
-        <div class="col-6 border-end p-4">
+        <div class="col-12 col-md-6 border-md-end p-4">
           <div class="d-flex align-items-center justify-content-center gap-3">
             <span class="fw-bold fs-1">1294</span>
             <i class="icon icon-pattern"></i>
             <span>Delivered Packages</span>
           </div>
         </div>
-        <div class="col-6 p-4">
+        <div class="col-12 col-lg-6 p-4">
           <div class="d-flex align-items-center justify-content-center gap-3">
             <span class="fw-bold fs-1">3594</span>
             <i class="icon icon-pattern"></i>
@@ -317,82 +323,81 @@
   </section>
 
   <section>
-    <div class="container py-4">
-      <span class="d-flex fs-4 fw-bolder mb-4 justify-content-center">
+    <div class="container py-5">
+      <div class="fs-3 fw-semibold text-center">
         Transporting Across The World
-      </span>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-blog">
-              <div class="card-blog-image">
-                <img src="assets/img/blog/1.jpg">
-              </div>
-              <div class="card-blog-content">
-                <div class="span text-white fw-bold">Liquid Transportation</div>
-                <div class="span bg-main-two">Premium Tankers</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-blog">
-              <div class="card-blog-image">
-                <img src="assets/img/blog/2.jpg">
-              </div>
-              <div class="card-blog-content">
-                <div class="span text-white fw-bold">Liquid Transportation</div>
-                <div class="span bg-main-two">Premium Tankers</div>
+      </div>
+      <div class="w-100 mt-5">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-blog">
+                <div class="card-blog-image">
+                  <img src="assets/img/blog/1.jpg">
+                </div>
+                <div class="card-blog-content">
+                  <div class="span text-white fw-bold">Liquid Transportation</div>
+                  <div class="span bg-main-two">Premium Tankers</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-blog">
-              <div class="card-blog-image">
-                <img src="assets/img/blog/3.jpg">
-              </div>
-              <div class="card-blog-content">
-                <div class="span text-white fw-bold">Liquid Transportation</div>
-                <div class="span bg-main-two">Premium Tankers</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-blog">
-              <div class="card-blog-image">
-                <img src="assets/img/blog/4.jpg">
-              </div>
-              <div class="card-blog-content">
-                <div class="span text-white fw-bold">Liquid Transportation</div>
-                <div class="span bg-main-two">Premium Tankers</div>
+            <div class="swiper-slide">
+              <div class="card-blog">
+                <div class="card-blog-image">
+                  <img src="assets/img/blog/2.jpg">
+                </div>
+                <div class="card-blog-content">
+                  <div class="span text-white fw-bold">Liquid Transportation</div>
+                  <div class="span bg-main-two">Premium Tankers</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-blog">
-              <div class="card-blog-image">
-                <img src="assets/img/blog/5.jpg">
+            <div class="swiper-slide">
+              <div class="card-blog">
+                <div class="card-blog-image">
+                  <img src="assets/img/blog/3.jpg">
+                </div>
+                <div class="card-blog-content">
+                  <div class="span text-white fw-bold">Liquid Transportation</div>
+                  <div class="span bg-main-two">Premium Tankers</div>
+                </div>
               </div>
-              <div class="card-blog-content">
-                <div class="span text-white fw-bold">Liquid Transportation</div>
-                <div class="span bg-main-two">Premium Tankers</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-blog">
+                <div class="card-blog-image">
+                  <img src="assets/img/blog/4.jpg">
+                </div>
+                <div class="card-blog-content">
+                  <div class="span text-white fw-bold">Liquid Transportation</div>
+                  <div class="span bg-main-two">Premium Tankers</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-blog">
+                <div class="card-blog-image">
+                  <img src="assets/img/blog/5.jpg">
+                </div>
+                <div class="card-blog-content">
+                  <div class="span text-white fw-bold">Liquid Transportation</div>
+                  <div class="span bg-main-two">Premium Tankers</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-      <button class="d-grid  mx-auto bg-main-blue text-white py-3 px-5 m-5 " type="button">
-        More Work
-      </button>
     </div>
-    <div class="bg-slider">
+    <div class="bg-main-gradient bg-section-blog-gradient">
+      <a href="#" class="btn-content"><span>More Work</span></a>
     </div>
   </section>
 
   <section>
     <div class="container py-5">
       <div class="row mb-3">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="section-top-info">
             Testimonial
           </div>
@@ -400,7 +405,7 @@
             <span class="fs-2 lh-sm fw-bolder">What Our Customer Say</span>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 d-none d-md-block">
           <div class="d-flex align-items-end justify-content-end h-100 pb-2">
             <div class="position-relative d-flex gap-1">
               <div class="btn-testimonial-arrow btn-testimonial-prev"></div>
@@ -409,7 +414,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100">
+      <div class="w-100 slider-testimonial-wrapper">
         <div class="swiper userSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -497,10 +502,10 @@
     </div>
   </section>
 
-  <section class="bg-two-color">
+  <section class="lg-bg-two-color">
     <div class="container">
       <div class="row">
-        <div class="col-6 p-5">
+        <div class="col-12 col-lg-6 py-3 p-lg-5">
           <div class="fly-img-wrapper position-relative">
             <img src="assets/img/transport/flaight.jpg" class="w-100 h-100" alt="fly">
             <div class="fly-img-content">
@@ -515,7 +520,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 fly-img-right mb-5 mt-5">
+        <div class="col-12 col-lg-6 fly-img-right p-2">
           <div>
             <div class="section-top-info py-0">
               Why Choose
@@ -529,7 +534,7 @@
           </div>
           <div class="feature-btn-wrapper">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-lg-6 mb-3">
                 <div class="d-flex align-items-center mb-3">
                   <div class="feature-btn-image me-3">
                     <img src="assets/img/icon/box-bg-content.svg" alt="box">
@@ -555,7 +560,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="d-flex align-items-center mb-3">
                   <div class="feature-btn-image me-3">
                     <img src="assets/img/icon/ship-bg-content.svg" alt="box">
@@ -684,10 +689,10 @@
     </div>
   </section>
 
-  <section class="bg-main-blue py-7">
+  <section class="bg-main-blue py-4 py-lg-7">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
           <div>
             <div class="section-top-info bg-opacity-10 text-white">
               Contact
@@ -699,7 +704,7 @@
               Leverage agile frameworks to provide a robust synopsis for strategy foster collaborative thinking to further the overall value.
             </p>
           </div>
-          <div class="w-100 mb-4">
+          <div class="w-100 mb-3">
             <div class="d-flex">
               <div class="icon-wrapper">
                 <img src="assets/img/icon/email.svg" alt="mail">
@@ -733,7 +738,7 @@
             </div>
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-lg-8">
           <form action="" class="contact-form">
             <div class="row">
               <div class="col-6 mb-4">
@@ -824,13 +829,13 @@
             <article class="border-bottom">
               <a href="#">
                 <div class="row my-3">
-                  <div class="col-5">
+                  <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                     <div class="blog-image">
                       <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-1.jpg" class="lazyload w-100" alt="post-1" loading="lazy">
                       <div class="blog-image-hover">Read More</div>
                     </div>
                   </div>
-                  <div class="col-1">
+                  <div class="col-2 col-lg-1">
                     <div class="d-flex flex-column align-items-center">
                       <i class="icon icon-date"></i>
                       <time datetime="2023-11-11">
@@ -839,7 +844,7 @@
                       </time>
                     </div>
                   </div>
-                  <div class="col-6 border-start">
+                  <div class="col-10 col-lg-6 border-start">
                     <div class="blog-title fs-3 fw-semibold mb-3">
                       Inland freight a worthy solution for your business
                     </div>
@@ -859,13 +864,13 @@
             <article class="border-bottom">
               <a href="#">
                 <div class="row my-3">
-                  <div class="col-5">
+                  <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                     <div class="blog-image">
                       <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-2.jpg" class="lazyload w-100" alt="post-2" loading="lazy">
                       <div class="blog-image-hover">Read More</div>
                     </div>
                   </div>
-                  <div class="col-1">
+                  <div class="col-2 col-lg-1">
                     <div class="d-flex flex-column align-items-center">
                       <i class="icon icon-date"></i>
                       <time datetime="2023-11-11">
@@ -874,7 +879,7 @@
                       </time>
                     </div>
                   </div>
-                  <div class="col-6 border-start">
+                  <div class="col-10 col-lg-6 border-start">
                     <div class="blog-title fs-3 fw-semibold mb-3">
                       How technology can help redraw the supply chain map
                     </div>
@@ -894,13 +899,13 @@
             <article class="border-bottom">
               <a href="#">
                 <div class="row my-3">
-                  <div class="col-5">
+                  <div class="col-12 col-lg-5 mb-3 mb-lg-0">
                     <div class="blog-image">
                       <img src="assets/img/news/loading.svg" data-src="assets/img/news/post-1.jpg" class="lazyload w-100" alt="post-1" loading="lazy">
                       <div class="blog-image-hover">Read More</div>
                     </div>
                   </div>
-                  <div class="col-1">
+                  <div class="col-2 col-lg-1">
                     <div class="d-flex flex-column align-items-center">
                       <i class="icon icon-date"></i>
                       <time datetime="2023-11-11">
@@ -909,7 +914,7 @@
                       </time>
                     </div>
                   </div>
-                  <div class="col-6 border-start">
+                  <div class="col-10 col-lg-6 border-start">
                     <div class="blog-title fs-3 fw-semibold mb-3">
                       Five things you should have ready for your broker
                     </div>
@@ -928,11 +933,11 @@
             </article>
           </div>
         </div>
-
       </div>
-      <button class="d-grid mx-auto bg-main-blue text-white fw-semibold py-3 px-5 m-5 mt-4" type="button">
-        More Blog
-      </button>
+
+    </div>
+    <div class=" bg-section-blog-gradient mb-3 mb-md-0">
+      <a href="#" class="btn-content"><span>More Work</span></a>
     </div>
   </section>
 
@@ -943,27 +948,27 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6 col-lg-4">
             <div class="footer-logo py-4 px-4">
               <img src="assets/img/logo.svg" alt="Firma Adı">
             </div>
           </div>
-          <div class="col-2">
-            <a href="#" class="d-block text-white py-4 fw-bolder fs-5">Pages</a>
+          <div class="col-2 d-none d-lg-flex align-items-center">
+            <a href="#" class="d-block text-white w-100">Pages</a>
           </div>
-          <div class="col-2">
-            <a href="#" class="d-block text-white py-4 fw-bolder fs-5">Utility</a>
+          <div class="col-2 d-none d-lg-flex align-items-center">
+            <a href="#" class="d-block text-white w-100">Utility</a>
           </div>
-          <div class="col-4">
-            <a href="#" class="d-block text-white py-4 fw-bolder fs-5">Subscribe</a>
+          <div class="col-4 d-none d-lg-flex align-items-center">
+            <a href="#" class="d-block text-white w-100">Subscribe</a>
           </div>
         </div>
       </div>
       <div class="bg-main-blue">
         <div class="container">
           <div class="row py-4">
-            <div class="col-4">
-              <div class="px-4">
+            <div class="col-12 col-lg-4">
+              <div class="px-0 px-lg-4">
                 <p class="text-white">Leverage agile frameworks to provide a robust synopsis for strategy collaborative thinking to further the overall value proposition.</p>
                 <div class="w-100 mb-3 mt-4">
                   <div class="d-flex">
@@ -989,7 +994,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 d-none d-lg-block">
               <ul class="footer-sitemap-list">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Team</a></li>
@@ -998,7 +1003,7 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <div class="col-2">
+            <div class="col-2 d-none d-lg-block">
               <ul class="footer-sitemap-list">
                 <li><a href="#">Style Guide</a></li>
                 <li><a href="#">Changelog</a></li>
@@ -1007,7 +1012,7 @@
                 <li><a href="#">Not Found</a></li>
               </ul>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-lg-block">
               <div class="col-7 mb-4 contact-form">
                 <div class="input-group-lg">
                   <input type="email" class="form-control px-3 border-light-subtle rounded-1" name="name" id="name" placeholder="Email here*" required>
@@ -1039,12 +1044,12 @@
         <div class="row border-top"></div>
         <div class="container py-3">
           <div class="row">
-            <div class="col-6 text-white align-items-center">
+            <div class="col-12 col-md-6 text-white align-items-center">
               <div class="px-4 copyright-text">
-                Copyright &copy; TransitFlow | Designed by VictorFlow - Powered by Webflow.
+                Copyright &copy; TransitFlow | Designed by VictorFlow
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-5 d-none d-lg-block">
               <ul class="footer-end-list copyright-link">
                 <li><a href="#">Style Guide</a></li>
                 <li><a href="#">Licenses</a></li>
