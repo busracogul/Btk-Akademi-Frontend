@@ -384,8 +384,9 @@ a {
   }
 }
 
-.global-logistics {
-  &-images {
+.about-images {
+  img {
+
     position: relative;
 
     @media (min-width: 768px) {
@@ -417,6 +418,7 @@ a {
       }
     }
   }
+
 }
 
 .card-blog-image,
@@ -461,9 +463,11 @@ a {
   background-image: url("../img/icon/btn-prev.svg");
 }
 
+$pattern-size: 60px;
+$pattern-bg: -60px;
+
 .bg-section-blog-gradient {
-  $pattern-size: 60px;
-  $pattern-bg: -60px;
+
 
   display: flex;
   align-items: center;
@@ -639,6 +643,7 @@ a {
     height: 40px;
     object-fit: contain;
   }
+
 }
 
 .blog-list {
@@ -916,5 +921,100 @@ footer {
     &:hover::after {
       opacity: 1;
     }
+  }
+}
+
+.about-wrapper {
+
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+    height: 100%;
+  }
+
+  .image-1 {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
+    }
+  }
+
+  .image-2 {
+    position: absolute;
+    height: 50%;
+    bottom: 35px;
+    left: 410px;
+    border-top: 20px solid #ffffff;
+    border-left: 20px solid #ffffff;
+
+    @media (min-width: 767.98px) {}
+  }
+
+  .btn-wrapper {
+    display: flex;
+    gap: 10px;
+
+    .btn-feature {
+      &:hover {
+        background: #FFB82B;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn-about-end {
+  display: flex;
+
+  .btn-content {
+    background: linear-gradient(94.06deg, #091242 -1.21%, #0c185a 58.66%, #13268d 116.84%);
+    padding: 15px 30px;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0 10px 10px -10px;
+
+
+    & span {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      background-color: #1b2d97;
+      position: absolute;
+      right: $pattern-bg / 3;
+      bottom: $pattern-bg - 20px;
+      width: $pattern-size;
+      height: $pattern-size * 2;
+      border-radius: 50%;
+      transform: rotate(15deg);
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover::after {
+      width: $pattern-size * 3.5;
+      height: $pattern-size * 3.5;
+    }
+  }
+}
+
+
+.bg-main-image {
+  background: url(../img/gallery/gemi.png), url(../img/gallery/truck.png), url(../img/gallery/contain.png), radial-gradient(50% 50% at 50% 50%, #175497 0%, #5BA9F6 100%);
+  background-repeat: no-repeat;
+  background-position: left 80px top 50px, right 80px bottom 20px, center, center;
+  height: 100dvh;
+  width: 100%;
+
+  @media(max-width: 768px) {
+    background-size: 220px, 280px, contain, contain;
+
   }
 }
